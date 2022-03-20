@@ -1,0 +1,53 @@
+@font-face {
+    font-family: 'The Billion';
+    src: url('../assets/fonts/the-billion.ttf') format('truetype');
+}
+
+
+@font-face {
+    font-family: 'Geomatrix';
+    src: url('../assets/fonts/geomatrix.ttf') format('truetype');
+}
+
+:root {
+    --primary-color: #ededed;
+    --accent-color: #ef7782;
+}
+
+
+html, body {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+    min-width: 320px;
+    height: 100vh;
+    background: var(--primary-color);
+}
+
+
+.central-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.jumbo-letters {
+    font-family: "The Billion", sans-serif, regular;
+    font-size: min(max(15vw, 3rem), 10rem);
+    font-weight: lighter;
+    color: var(--accent-color);
+}
+
+.jumbo-slogan {
+    font-family: "Geomatrix", sans-serif, regular;
+    font-size: min(max(10vw, 1rem), 2rem);
+    color: var(--accent-color);
+    transition: 1s ease-in-out;
+}
